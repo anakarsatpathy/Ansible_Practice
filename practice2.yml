@@ -1,0 +1,11 @@
+---
+
+- hosts: localhost
+  name: creation of files
+  tasks: 
+   - name: create file aaa.txt
+     command: touch aaa.txt
+
+   - name: create file bbb.txt
+     command: touch bbb.txt
+ 

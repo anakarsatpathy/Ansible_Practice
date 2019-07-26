@@ -1,0 +1,22 @@
+---
+
+- name: playbook5
+  hosts: localhost
+  tasks:
+   - name: Execute date command
+     command: date
+   - name: Run the script
+     script: abc.sh
+
+- name: playbook6
+  hosts: localhost
+  tasks: 
+   - name: install httpd service
+     yum:
+      name: httpd
+      state: present
+   - name: 
+     service:
+      name: httpd
+      state: started
+      
